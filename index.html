@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>schwarz2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="navigation">
+       <ul>
+            <li class="list active">
+                <a href="#">
+                <span class="icon">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </span>
+                <span class="text">home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </span>
+                    <span class="text">about</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </span>
+                    <span class="text">montage</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="book-outline"></ion-icon>
+                    </span>
+                    <span class="text">usthb</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </span>
+                    <span class="text">GMC</span>
+                </a>
+            </li>
+              <div class="indicator"></div>
+       </ul>
+    </div>
+        <script>
+            const list = document.querySelectorAll(".list");
+            function activelink(){
+                list.forEach((item) =>
+                item.classList.remove("active"));
+                this.classList.add("active");
+            }
+            list.forEach((item) =>
+            item.addEventListener("click", activelink))
+        </script>
+    
+    
+       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+        
+
+
+
+    
